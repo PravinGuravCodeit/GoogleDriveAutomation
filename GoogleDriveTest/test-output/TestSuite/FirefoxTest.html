@@ -1,0 +1,277 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 13 10:56:00 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56089 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testGoogleDrive.GoogleDriveTest.setup()'><b>setup</b><br>Test class: testGoogleDrive.GoogleDriveTest<br>Parameters: Firefox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\DAP\\daplinkchecker&quot;,&quot;installDate&quot;:1438010922015,&quot;updateDate&quot;:1438010922015,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:3977,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;2.0&quot;,&quot;maxVersion&quot;:&quot;30.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788665	addons.xpi	DEBUG	New add-on deskCutv2@gmail.com installed in winreg-app-global
+1457846788808	addons.xpi	WARN	Disabling foreign installed add-on deskCutv2@gmail.com in winreg-app-global
+1457846788808	addons.xpi-utils	DEBUG	Make addon winreg-app-global:deskCutv2@gmail.com visible
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;deskCutv2@gmail.com&quot;,&quot;syncGUID&quot;:&quot;4vLEf-nHc3dI&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.1.13&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;https://static.dreamsadnetwork.com/ep/deskv2.update.rdf&quot;,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://quick_start/skin/logo.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:&quot;http://www.lightningnewtab.com&quot;,&quot;developers&quot;:[&quot;firefoxtab&quot;]},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Users\\dell\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1kr8tda2.default\\extensions\\deskCutv2@gmail.com&quot;,&quot;installDate&quot;:1454942050263,&quot;updateDate&quot;:1454942050263,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:386498,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[{&quot;locales&quot;:[&quot;en-US&quot;],&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:null,&quot;developers&quot;:[&quot;firefoxtab&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;99.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788811	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1457846788811	addons.xpi-utils	DEBUG	Updating add-on states
+1457846788813	addons.xpi-utils	DEBUG	Writing add-ons list
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1457846788830	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1457846788830	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1457846788831	addons.manager	DEBUG	Starting provider: GMPProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1457846788873	addons.manager	DEBUG	Starting provider: PluginProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1457846788874	addons.manager	DEBUG	Completed startup sequence
+1457846807308	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1457846807308	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1457846807309	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;100.65.57.28&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at testGoogleDrive.GoogleDriveTest.setup(GoogleDriveTest.java:42)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\DAP\\daplinkchecker&quot;,&quot;installDate&quot;:1438010922015,&quot;updateDate&quot;:1438010922015,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:3977,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;2.0&quot;,&quot;maxVersion&quot;:&quot;30.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788665	addons.xpi	DEBUG	New add-on deskCutv2@gmail.com installed in winreg-app-global
+1457846788808	addons.xpi	WARN	Disabling foreign installed add-on deskCutv2@gmail.com in winreg-app-global
+1457846788808	addons.xpi-utils	DEBUG	Make addon winreg-app-global:deskCutv2@gmail.com visible
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;deskCutv2@gmail.com&quot;,&quot;syncGUID&quot;:&quot;4vLEf-nHc3dI&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.1.13&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;https://static.dreamsadnetwork.com/ep/deskv2.update.rdf&quot;,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://quick_start/skin/logo.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:&quot;http://www.lightningnewtab.com&quot;,&quot;developers&quot;:[&quot;firefoxtab&quot;]},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Users\\dell\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1kr8tda2.default\\extensions\\deskCutv2@gmail.com&quot;,&quot;installDate&quot;:1454942050263,&quot;updateDate&quot;:1454942050263,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:386498,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[{&quot;locales&quot;:[&quot;en-US&quot;],&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:null,&quot;developers&quot;:[&quot;firefoxtab&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;99.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788811	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1457846788811	addons.xpi-utils	DEBUG	Updating add-on states
+1457846788813	addons.xpi-utils	DEBUG	Writing add-ons list
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1457846788830	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1457846788830	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1457846788831	addons.manager	DEBUG	Starting provider: GMPProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1457846788873	addons.manager	DEBUG	Starting provider: PluginProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1457846788874	addons.manager	DEBUG	Completed startup sequence
+1457846807308	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1457846807308	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1457846807309	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 25 more
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7383928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7383928'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\DAP\\daplinkchecker&quot;,&quot;installDate&quot;:1438010922015,&quot;updateDate&quot;:1438010922015,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:3977,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;2.0&quot;,&quot;maxVersion&quot;:&quot;30.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788665	addons.xpi	DEBUG	New add-on deskCutv2@gmail.com installed in winreg-app-global
+1457846788808	addons.xpi	WARN	Disabling foreign installed add-on deskCutv2@gmail.com in winreg-app-global
+1457846788808	addons.xpi-utils	DEBUG	Make addon winreg-app-global:deskCutv2@gmail.com visible
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;deskCutv2@gmail.com&quot;,&quot;syncGUID&quot;:&quot;4vLEf-nHc3dI&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.1.13&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;https://static.dreamsadnetwork.com/ep/deskv2.update.rdf&quot;,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://quick_start/skin/logo.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:&quot;http://www.lightningnewtab.com&quot;,&quot;developers&quot;:[&quot;firefoxtab&quot;]},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Users\\dell\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1kr8tda2.default\\extensions\\deskCutv2@gmail.com&quot;,&quot;installDate&quot;:1454942050263,&quot;updateDate&quot;:1454942050263,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:386498,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[{&quot;locales&quot;:[&quot;en-US&quot;],&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:null,&quot;developers&quot;:[&quot;firefoxtab&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;99.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788811	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1457846788811	addons.xpi-utils	DEBUG	Updating add-on states
+1457846788813	addons.xpi-utils	DEBUG	Writing add-ons list
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1457846788830	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1457846788830	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1457846788831	addons.manager	DEBUG	Starting provider: GMPProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1457846788873	addons.manager	DEBUG	Starting provider: PluginProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1457846788874	addons.manager	DEBUG	Completed startup sequence
+1457846807308	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1457846807308	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1457846807309	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;dell-PC&apos;, ip: &apos;100.65.57.28&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:276)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:223)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:212)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at testGoogleDrive.GoogleDriveTest.setup(GoogleDriveTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\DAP\\daplinkchecker&quot;,&quot;installDate&quot;:1438010922015,&quot;updateDate&quot;:1438010922015,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:3977,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;2.0&quot;,&quot;maxVersion&quot;:&quot;30.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788665	addons.xpi	DEBUG	New add-on deskCutv2@gmail.com installed in winreg-app-global
+1457846788808	addons.xpi	WARN	Disabling foreign installed add-on deskCutv2@gmail.com in winreg-app-global
+1457846788808	addons.xpi-utils	DEBUG	Make addon winreg-app-global:deskCutv2@gmail.com visible
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	DeferredSave.extensions.json	DEBUG	Save changes
+1457846788809	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;deskCutv2@gmail.com&quot;,&quot;syncGUID&quot;:&quot;4vLEf-nHc3dI&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;0.1.13&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;https://static.dreamsadnetwork.com/ep/deskv2.update.rdf&quot;,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://quick_start/skin/logo.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:&quot;http://www.lightningnewtab.com&quot;,&quot;developers&quot;:[&quot;firefoxtab&quot;]},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Users\\dell\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\1kr8tda2.default\\extensions\\deskCutv2@gmail.com&quot;,&quot;installDate&quot;:1454942050263,&quot;updateDate&quot;:1454942050263,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:386498,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[{&quot;locales&quot;:[&quot;en-US&quot;],&quot;name&quot;:&quot;FirefixTab&quot;,&quot;description&quot;:&quot;FirefixTab is a firefox extension based on Html5. It provides website fast dial to make you find your favorite websites ASAP, New Tab Start Page, Organize bookmarks, Custom backgrounds, custom dials.&quot;,&quot;creator&quot;:&quot;lightningnewtab.com&quot;,&quot;homepageURL&quot;:null,&quot;developers&quot;:[&quot;firefoxtab&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;4.0&quot;,&quot;maxVersion&quot;:&quot;99.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1457846788811	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1457846788811	addons.xpi-utils	DEBUG	Updating add-on states
+1457846788813	addons.xpi-utils	DEBUG	Writing add-ons list
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1457846788830	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1457846788830	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1457846788830	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1457846788831	addons.manager	DEBUG	Starting provider: GMPProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1457846788873	addons.manager	DEBUG	Starting provider: PluginProvider
+1457846788873	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1457846788873	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1457846788874	addons.manager	DEBUG	Completed startup sequence
+1457846807308	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1457846807308	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1457846807309	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:122)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testGoogleDrive.GoogleDriveTest.terminateBrowser()'><b>terminateBrowser</b><br>Test class: testGoogleDrive.GoogleDriveTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testGoogleDrive.GoogleDriveTest.ValidUserIDPassword()'><b>ValidUserIDPassword</b><br>Test class: testGoogleDrive.GoogleDriveTest</td>
+<td></td>
+<td>0</td>
+<td>testGoogleDrive.GoogleDriveTest@17c68925</td></tr>
+<tr>
+<td title='testGoogleDrive.GoogleDriveTest.VerifyInvalidEmailId()'><b>VerifyInvalidEmailId</b><br>Test class: testGoogleDrive.GoogleDriveTest</td>
+<td></td>
+<td>0</td>
+<td>testGoogleDrive.GoogleDriveTest@17c68925</td></tr>
+<tr>
+<td title='testGoogleDrive.GoogleDriveTest.VerifyInvalidPassword()'><b>VerifyInvalidPassword</b><br>Test class: testGoogleDrive.GoogleDriveTest</td>
+<td></td>
+<td>0</td>
+<td>testGoogleDrive.GoogleDriveTest@17c68925</td></tr>
+</table><p>
+</body>
+</html>
